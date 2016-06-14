@@ -308,7 +308,7 @@ function handleClose(streams, children, childrenInfo) {
             _.each(aliveChildren, function(child) {
                 child.kill();
             });
-            process.exit(exitCodes);
+            exit(exitCodes);
         });
     }
 }
